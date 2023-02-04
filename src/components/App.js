@@ -7,6 +7,14 @@ import About from "./About";
 import user from "../data/user";
 console.log(user);
 
+function userComponent(props){
+  return (
+    <div> 
+      {props.userComponent}
+    </div>
+  )
+} 
+
 function App() {
   return (
     <div>
