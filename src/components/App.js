@@ -7,14 +7,17 @@ import About from "./About";
 import user from "../data/user";
 console.log(user);
 
-function userComponent(props){
+function user(props){
   return (
     <div> 
-      {props.userComponent}
+      {props.user}
     </div>
-  )
+  );
 } 
 
+function user(){
+  return<
+}
 function App() {
   return (
     <div>
