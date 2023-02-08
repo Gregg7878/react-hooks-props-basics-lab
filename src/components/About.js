@@ -1,14 +1,18 @@
 import React from "react";
 
-function About() {
+const About = (props) => {
+  let bioDisplay;
+
+  if (props.bio && props.bio !== '') {
+    bioDisplay = <p>{props.bio}</p>;
+  }
+
   return (
-    <div id="about">
-      <h2>About Me</h2>
-      <p>{Props.bio }</p>
-      <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
-      {/* add your <Links /> component here */}
+    <div>
+      <h3>About</h3>
+      {bioDisplay}
     </div>
   );
-}
+};
 
 export default About;
