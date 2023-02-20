@@ -1,16 +1,12 @@
 import React from "react";
+import Links from "./Links";
 
-const About = (props) => {
-  let bioDisplay;
-
-  if (props.bio && props.bio !== '') {
-    bioDisplay = <p>{props.bio}</p>;
-  }
-
+const About = ({ bio, links }) => {
   return (
     <div>
       <h3>About</h3>
-      {bioDisplay}
+      {bio && bio.trim() !== "" && <p>{bio}</p>}
+      <Links links={links} />
     </div>
   );
 };
